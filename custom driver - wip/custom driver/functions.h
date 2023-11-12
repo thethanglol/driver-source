@@ -61,7 +61,7 @@ auto requesthandler(_requests* pstruct) -> bool
 
 auto hooked_function(uintptr_t rcx) -> void
 {
-	dbg("CALLED HAHAHAH!");
+	dbg("called hook!");
 	_requests* in = (_requests*)rcx;
 	requesthandler(in);
 }
